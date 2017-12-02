@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
   <body>
+  <?php include "../../menucon.php" ?>
   <div class="wrapper">
     <form method="post" action="update.php">
       <input type="hidden" value="<?php echo $id; ?>" name="id">
@@ -43,6 +44,9 @@
       </div>
     </form>
   </div>
+  <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 <?php unset($_SESSION["flash"]); ?>

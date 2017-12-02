@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+<?php include "../../menucon.php" ?>
   <div class="container">
   <h2>Danh sách</h2>
   <div class="row">
@@ -53,5 +54,8 @@
     </tbody>
   </table>
 </div>
+<script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
