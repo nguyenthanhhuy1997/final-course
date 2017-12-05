@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php require_once "../../check-login.php"; ?>
 <?php require_once "../../../db/mysql.php"; ?>
 <?php
   if(!isset($_GET["id"])){

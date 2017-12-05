@@ -1,5 +1,5 @@
-<?php session_start(); ?>
 <?php require_once "../../../db/mysql.php"; ?>
+<?php require_once "../../check-login.php"; ?>
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
@@ -45,8 +45,8 @@
     							echo "User";
     							break;
     					}; ?>
-    					<td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>;
-    					<td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>;
+    					<td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>
+    					<td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>
     				</tr>
 		<?php   }
     		}

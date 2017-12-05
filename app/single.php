@@ -26,13 +26,15 @@
                 if($result->num_rows > 0){
                 $row = $result->fetch_assoc(); ?>
                 <div class="card mt-4">
-                    <img class="card-img-top img-fluid" style="width: 300px; height: 400px" src="<?php echo URL_IMAGE.$row['image'];?>" alt="">
+                    <img class="card-img-top img-fluid" style="width: 820px; height: 907px" src="<?php echo URL_IMAGE.$row['image'];?>" alt="">
                     <div class="card-body">
+                    <center>
                       <h3 class="card-title"><?php echo $row["name"]; ?></h3>
                       <h4><?php echo $row["price"]; ?></h4>
                       <p class="card-text"><?php echo $row["description"];?></p>
                       <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                       4.0 stars
+                      </center>
                   </div>
                 </div>
                 <!-- /.card -->
