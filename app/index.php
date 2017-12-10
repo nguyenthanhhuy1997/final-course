@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   <title>Trang chủ</title>
     <?php include "lib.php"; ?>
   </head>
   <body>
@@ -64,10 +65,10 @@
                   <a href="single.php?id=<?php echo $row["id"]; ?>"><img class="card-img-top" src="<?php echo URL_IMAGE.$row['image'];?>" alt=""></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="#"><?php echo $row["name"];?></a>
+                      <center><a href="#"><?php echo $row["name"];?></a></center>
                     </h4>
-                    <h5>Price : <?php echo $row["price"];?> VNĐ</h5>
-                    <p class="card-text"><?php echo $row["description"];?>.</p>
+                    <center><h5>Giá: <?php echo $row["price"];?> VNĐ</h5></center>
+                    <p class="card-text" style="text-overflow: ellipsis;overflow: hidden; white-space: nowrap;"><?php echo $row["description"];?><a href=""> ...</p>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -94,7 +95,7 @@
 
             <?php for ($i = 1; $i <= $total_page; $i++){
               if ($i == $current_page){ ?>
-                <li class="page-item-active"><a class="page-link" href=""><?php echo $i; ?></a></li>
+                <li class="page-item-active"><a class="page-link" style="background-color: #7CFC00" href=""><?php echo $i; ?></a></li>
               <?php }else{ ?>
                 <li class="page-item"><a class="page-link" href="index.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
             <?php
@@ -120,7 +121,7 @@
 
     </div>
     <!-- /.container -->
-</div>
+</div> 
     <!-- Footer -->
     <?php include "footer.php" ?>
 

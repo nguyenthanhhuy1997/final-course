@@ -3,7 +3,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Shop Homepage - Start Bootstrap Template</title>
+<title>TH COMPUTER</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../public/css/bootstrap.min.css" rel="stylesheet">

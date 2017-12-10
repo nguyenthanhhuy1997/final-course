@@ -7,16 +7,17 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
-  <body>
+  <body style="background-color: #EEFF41">
   <?php include "../../menucon.php" ?>
   <div class="wrapper">
     <form method="post" action="create.php">
       <div class="row">
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
-      <div>
+      <br>
+      <center><div>
         <h1>Tạo mới</h1>
-      </div>
+      </div></center>
       <div class="row">
         <label>Tên người dùng:</label>
         <input class="form-control" type="text" name="name">
@@ -42,8 +43,8 @@
         </select>
       </div>
       <br>
-      <div class="row">
-        <button class="btn btn-primary">Submit</button>
+      <div>
+        <center><button class="btn btn-primary" style="border-radius: 20px;background-color: red;border-color: red;border: outset;">Submit</button></center>
       </div>
     </form>
   </div>

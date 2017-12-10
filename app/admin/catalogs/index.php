@@ -8,7 +8,7 @@
    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
-<body>
+<body style="background-color: #81D4FA">
 <?php include "../../menucon.php" ?>
   <div class="container">
   <h2>Danh sách chuyên mục</h2>

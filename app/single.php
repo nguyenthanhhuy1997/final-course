@@ -8,7 +8,7 @@
   <head>
     <?php include "lib.php"; ?>
   </head>
-  <body>
+  <body style="background-color: #BBBBBB">
     <!-- Navigation -->
     <?php include "menu.php" ?>
     <!-- Page Content -->
@@ -29,12 +29,12 @@
                     <img class="card-img-top img-fluid" style="width: 820px; height: 907px" src="<?php echo URL_IMAGE.$row['image'];?>" alt="">
                     <div class="card-body">
                     <center>
-                      <h3 class="card-title"><?php echo $row["name"]; ?></h3>
-                      <h4><?php echo $row["price"]; ?></h4>
+                      <h3 class="card-title">Tên Sản Phẩm: <?php echo $row["name"]; ?></h3>
+                      <h4>Giá Tiền: <?php echo $row["price"]; ?></h4>
                       <p class="card-text"><?php echo $row["description"];?></p>
-                      <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                      4.0 stars
-                      </center>
+                      <h5>Đánh giá: <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                      4.0 Sao
+                      </center></h5>
                   </div>
                 </div>
                 <!-- /.card -->
